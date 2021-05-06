@@ -10,9 +10,7 @@ const app = express();
 
 // Start Server
 
-app.listen(3000, () => {
-  console.log('Gif Search listening on port localhost:3007!');
-});
+
 
 app.use(express.static('public'));
   // app.js
@@ -33,3 +31,7 @@ app.use(express.static('public'));
     //         res.render('home', { gifs })
     //     }).catch(console.error)
   })
+
+  app.listen(3000, () => {
+    console.log('Gif Search listening on port localhost:3000!');
+  });
